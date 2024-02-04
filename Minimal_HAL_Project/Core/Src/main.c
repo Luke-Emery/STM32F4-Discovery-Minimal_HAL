@@ -60,7 +60,7 @@ int main(void)
 }
 
 
-void SystemClock_Config(void)
+static void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
@@ -120,7 +120,7 @@ void Error_Handler(void)
   * @brief  The program loop
   * @retval int - status code
   */
-int program_loop(void)
+static int program_loop(void)
 {
 	/* Local Variables */
 
